@@ -1,0 +1,40 @@
+{% extends "layout.html" %} 
+{% block title %} log in {% endblock %} 
+{% block main %}
+  <div class="row">
+    <div class="col-12">
+      <div class="formulario d-flex justify-content-center align-items-center">
+        <form
+          class="d-flex justify-content-center align-items-center flex-column"
+          action="/"
+          method="post"
+        >
+          <div class="form-group">
+            <p>Bienvenido! <br />Introduce un nickname</p>
+            <input
+              autocomplete="off"
+              type="text"
+              name="username"
+              class="form-control"
+              id="formGroupExampleInput"
+              placeholder="Introduce tu nickname"
+            />
+          </div>
+          <div class="div_registrarse">
+            <button type="submit" class="btn btn-primary" id="iniciar_sesion">
+              Iniciar!
+            </button>
+          </div>
+          <!-- Flash de aviso al usuario sobre llenar el formulario -->
+          <div id="flash">
+            {% with messages = get_flashed_messages() %} {% if messages %}
+            <ul class="flashes">
+              {% for message in messages %} {{ message }} {% endfor %}
+            </ul>
+            {% endif %} {% endwith %}
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

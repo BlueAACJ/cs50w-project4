@@ -1,0 +1,29 @@
+{% extends "layout.html" %} 
+{% block title %} Home {% endblock %} 
+{% block main %}
+    <div class="row" id="palabras_index" action="/home" methods="post">
+        <div class="col-12">
+            <div class=" d-flex justify-content-center align-items-center flex-column">
+                <div class="botones btn-group-vertical">
+                    <p>hola! <br />Selecciona un apartado</p>
+                    <a href="/historia" class="btn btn-primary">Historia</a>
+                    <a href="/geografia" class="btn btn-success">Geografia</a>
+                    <a href="/cultura" class="btn btn-warning">Cultura</a>
+                    <a href="/explicacion_seccion" class="btn btn-danger">Preguntas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="palabras_index">
+        <div class="col-12">
+            <div class="d-flex bd-highlight mb-3">
+                <div class="mr-auto p-2 bd-highligh">
+                    <a id="a_tablapuntuaciones" href="/puntuaciones" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Tabla de Puntuaciones</a>  
+                </div>
+                <div class="p-2 bd-highlight">
+                    <a id="a_cerrar_sesion" href="/cerrarsesion" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Cerrar Sesion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

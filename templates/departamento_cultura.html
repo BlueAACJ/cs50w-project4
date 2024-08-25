@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block title %} {{dep}} {% endblock %}
+{% block main %}
+    <!-- Pagina del departamento -->
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex align-items-center" >
+                <div>
+                    <!-- Boton para regresar al mapa del apartado -->
+                    <a class="btn" href="/cultura" ><i class="fa fa-home"></i> Home</a>
+                </div>
+                <div >
+                    <!-- Nombre del departamento -->
+                    <h1 style="padding-left: 0%;">{{dep | safe}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <p>{{parrafo1 | safe}} </p>
+        </div>
+        <div class="col-4">
+            <!-- Primera imagen -->
+            <img async src="{{imagen1}}" class="rounded float-right" style="width:100%;max-width:300px">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <!-- SEgunda imagen -->
+            <img async src="{{imagen2}}" class="rounded float-left" style="width:100%;max-width:300px">
+        </div>
+        <div class="col-8">
+            <p>{{parrafo2| safe}}</p>
+        </div>
+    </div>
+    <div class="d-flex bd-highlight mb-3" id="botones">
+        <div class="p-2 bd-highlight">
+            <a class="btn btn-info" class="btn" href="/departamento_historia/{{dep}}" > historia </a>
+        </div>
+        <div class="ml-auto p-2 bd-highlight">
+            <a class="btn btn-success" class="btn" href="/departamento_geografia/{{dep}}"> Geografia </a>
+        </div>
+    </div>
+{% endblock %} 

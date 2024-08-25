@@ -1,0 +1,37 @@
+{% extends "layout.html" %} {% block title %} Tabla de Puntuaciones {% endblock
+    %} {% block main %}
+    <div class="row">
+        <div class="col-12">
+        <div class="mr-auto p-2 bd-highligh">
+            <a class="btn" href="/home"><i class="fa fa-home"></i> Home</a>
+        </div>
+        </div>
+        <div class="col-12" id="TItulo" data-aos="flip-left">
+        <h1>Tabla de Puntuaciones:</h1>
+        </div>
+        <div class="col-12">
+        <div class="mr-auto p-2 bd-highligh" data-aos="flip-left">
+            <a id="refresh" class="btn btn-danger">Actualizar</a>
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" action="/puntuaciones">
+        <!-- ul De las mejores 10 puntuaciones  -->
+        {% for i in puntuaciones %}
+        <div data-aos="flip-right">
+            <ol id="puntuaciones">
+            <span>{{i.usuario}} puntuacion: {{i.puntuacion}}</span>
+            </ol>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+    <script>
+        let refresh = document.getElementById("refresh");
+        refresh.addEventListener("click", (_) => {
+        location.reload();
+        });
+    </script>
+    {% endblock %}
+    

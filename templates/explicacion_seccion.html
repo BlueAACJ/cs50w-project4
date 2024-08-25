@@ -1,0 +1,25 @@
+{% extends "layout.html" %} 
+{% block title %} Preguntados {% endblock %} 
+{% block main %}
+    <div class="col-12">
+        <div class="d-flex align-items-center" >
+            <div class="">
+                <a class="btn" href="/home" ><i class="fa fa-home"></i> Home</a>                
+            </div>
+            <div id="historia" > 
+                <h1 style="padding-left: 68%;">Preguntados</h1>
+            </div>              
+        </div>
+    </div>
+    <div class="col-12" id="Parrafo">
+        <p>En esta sección pondrás a prueba tu aprendizaje en los distintos apartados de la aplicación, tendrás que responder a 8 preguntas 
+        donde recibirás puntos por cada respuesta correcta que hagas podrás verte en el ranking de Puntuaciones en el menú principal. ¡Buena suerte!</p>
+    </div>
+    <div class="col-12" >
+        <div class=" d-flex justify-content-center align-items-center flex-column">
+            <div class="botones btn-group-vertical">
+                <a href="/pregunta" class="btn btn-danger">Vamos!</a>
+            </div>
+        </div>
+    </div>
+{% endblock %} 

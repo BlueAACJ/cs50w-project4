@@ -1,0 +1,106 @@
+// Alejandro Antonio Castillo Jacamo Estilos de la aplicacion 
+
+// Estilos del formulario 
+.formulario {
+    width: 100%; 
+    height: 80vh;
+    font-size: large;
+    text-align: center;
+}
+
+// Estilos del formulario index 
+.formulario form{
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    padding: 100px;
+}
+
+// Estilos del encabezado del index 
+#palabras_index{
+    font-size: x-large;
+    text-align: center;
+}
+
+// Botones 
+.botones{
+    margin: 10px;
+    padding: 10px;
+}
+
+// Botones 
+.botones a{
+    margin: 10px;
+    padding: 10px;
+} 
+
+// Estilos de la posicion del mapa y el texto de encabezado 
+#Mapa{
+    max-width: 100%; 
+    height: auto;
+    text-align: center;
+    font-family: serif;
+    h1{
+        font-size: 500% ;
+        text-align: center;
+    }
+}
+
+// Titulo de las seccion 
+#TItulo{
+    text-align: center;
+}
+
+// Titulo de la seccion historia 
+#historia{
+    max-width: 100%; 
+    height: auto;
+    font-family: serif;
+    h1{
+        font-size: 500% ;
+    }
+}
+
+// Parrafo de la explicacion de la seccion de preguntados
+#Parrafo{
+    text-align: center;
+    font-family: serif;
+    font-size: 150%;
+    padding: 25px;
+}
+
+// Estilos boton home
+.btn {
+    border: none; // border 0 
+    padding: 12px 16px; // padding 
+    font-size: 30px; // tamano de la fuente 
+    cursor: pointer; // Manito del mouse 
+}
+
+// Cambio al pasar sobre el 
+.btn:hover {
+    background-color: RoyalBlue;
+    color: white !important;
+}
+
+// lista de puntuaciones 
+#puntuaciones{
+    text-align: center;
+    font-family: serif;
+    font-size: 150%;
+    padding: 25px;
+}
+
+#Fondo{
+    background-color: antiquewhite;
+    padding-left: 10%;
+    padding-right: 10%;
+    min-height: 523px;
+}
+
+#Fondo-footer{
+    background-color: antiquewhite;
+}
+
+#botones{
+    margin-bottom: 0 !important;
+}
